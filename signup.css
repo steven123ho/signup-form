@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+
+div.left {
+    width: 50vw;
+    height: 100vh;
+    background-image: url(./flower.avif);
+    background-repeat: no-repeat;
+    background-size: 510px 800px;
+}
+
+div.left>h1 {
+    position: relative;
+    background-color: rgba(170,203,255,255);
+    padding: 2vw
+}
+
+
+img {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 3vw;
+    height: 4vw;
+    color: black;
+}
+
+div.right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgba(170,203,255,255);
+}
+
+
+
+p {
+    color: Black;
+    font-weight: bold;
+} 
+h1,
+h3 {
+    color: black;
+    font-size: clamp(20px, 3rem, 3vw);
+}
+
+form>div{
+    display: flex;
+    align-content: left;
+    justify-content: space-between;
+}
+
+label, 
+input {
+    display: flex;
+    flex-direction: column;
+    color: rgb(1, 1, 1);
+    font-weight: bold;
+}
+
+input {
+    width: 23vw;
+    height: 3vh;
+    border: 0px;
+    background-color: rgba(170,203,255,255);
+    border-bottom: solid rgb(6, 6, 6) 2px;
+    margin-bottom: 25px;
+}
+
+button {
+    margin-top: 20px;
+    font-weight: bold;
+    width: max(65px, 15vw);
+    height: 5vh;
+    background: white;
+    border: solid black 1px;
+    box-shadow: -4px 4px black;
+}
+
+button:hover {
+    transform: translate(-1px, 1px);
+    box-shadow: -3px 3px black;
+}
+
+button:active {
+    transform: translate(-3px, 3px);
+    box-shadow: 0px 0px black;
+}
