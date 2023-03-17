@@ -24,31 +24,31 @@
             <form action="GET">
                 <div>
                     <label for="first_name">First Name
-                        <input id="first_name" required>
+                        <input type="text" id="first_name" placeholder="First" required>
                     </label>
              
                     <label for="last_name">Last Name
-                        <input id="last_name" required>
+                        <input type="text" id="last_name" placeholder="Last" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="user_email">Email
-                        <input type="email" id="user_email" required>
+                        <input type="email" id="user_email" placeholder="youremail@website.com" required>
                     </label>
                
                     <label for="phone_number">Phone
-                        <input id="phone_numebr">
+                        <input type="tel" id="phone_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </label>
                 </div>
 
                 <div>
                     <label for="user_password">Password
-                        <input id="user_password" required>
+                        <input class="error" type="password" id="user_password" required>
                     </label>
 
                     <label for="confirm_password">Confirm Password
-                        <input id="confirm password" required>
+                        <input class="error" type="password" id="confirm password" required>
                     </label>
                 </div>
 
